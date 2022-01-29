@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet")
+		link(rel="stylesheet" href="css/bootstrap.css")
+		link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+		link(rel="stylesheet" href="style.css")
+		title Верстка сайта на Bootstrap 4
+	body
+		#toTop
+			i(class="fas fa-chevron-up")
+		header.menu-bar
+			div.container
+				div.row
+
+					div.col-xl-2.logo-bar
+						img(src="../img/logo.png", alt="ST1M" class="logo")
+						button.menu-icon
+							i(class="fas fa-bars")
+					div.col-xl-8.ml-auto.align-self-center
+						//- ml-auto - смещает меню влево, иконку вправо
+						//- align-self-center - меню выравнивается по вертикали, по икноке
+						nav
+							ul.menu.d-flex.justify-content-end
+								//- d-flex - делает весь блок флекс боксом
+								//- justify-content-end - смещает весь блок вправо
+								li.menu_item
+									a(href="/") Home
+								li.menu_item
+									a(href="#about") About
+								li.menu_item
+									a(href="#servicing") Servicing
+								li.menu_item
+									a(href="#portfolio") Portfolio
+								li.menu_item
+									a(href="#blog") Blog
+								li.menu_item
+									a(href="#ContactUs") Contact Us
+								li.menu_item
+									i(class="fas fa-search").menu-item
+
+		header.header
+			.container
+				.row
+					.col-xl-12
+						p(class="title display-4") Web development project
+						br
+						p.header_text Very suitable to support all web development projects
+						button.button.button_empty OUR SERVICES
+						button.button.button_full HIRE IS NOW
+							//- button_empty - пустая кнопка 
+							//- button_full - полная кнопка
+
+
+											//- MAIN
+
+											//- About Us
+		section.about#about
+			.container
+				.row.justify-content-center
+					.col-xl-7
+						p.display-3 About US
+						p.about-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nobis asperiores natus distinctio sunt in quo iure odio cumque aperiam consequuntur ex ducimus ratione, debitis pariatur placeat. Minima id, earum.
+				.row.justify-content-around
+					.col-xl-3.col-md-4.col-sm-6
+						img(src="../img/internet.png", alt="" height="70px")
+						p.h2 Awesome Icons
+						p.aboutP Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vitae culpa vel! , architecto.
+					.col-xl-3.col-md-4.col-sm-6
+						img(src="../img/comunication.png", alt="" height="70px")
+						p.h2 One Page
+						p.aboutP Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vitae culpa vel! , architecto.
+					.col-xl-3.col-md-4.col-sm-6
+						img(src="../img/brain.png", alt="" height="70px")
+						p.h2 Fully Responsive
+						p.aboutP Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vitae culpa vel! , architecto.
+
+
+											//- Services
+
+		section.services#servicing
+
+			.container
+				.row.justify-content-center
+					.col-xl-8
+						p.display-3 Our Services
+						p.services-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nobis asperiores natus distinctio sunt in quo iure odio cumque aperiam consequuntur ex ducimus ratione, debitis pariatur placeat. Minima id, earum.
+
+				.row.justify-content-center
+						.col-xl-4.col-md-6
+							.our-card
+								i(class="fas fa-search").services-icon
+								p.h3 Research
+								p At vero eos et accusamus et iusto odio dignissimos ducimus blatiis placeatuos.inima id, earum. Rerum nobis asperiores  natus disti Minima id, earum.
+								button Read More
+
+						.col-xl-4.col-md-6
+							.our-card
+								i(class="fas fa-images").services-icon
+								p.h3 Portfolio
+								p At vero eos et accusamus et iusto odio dignissimos ducimus blatiis placeatuos.inima id, earum. Rerum nobis asperiores  natus disti Minima id, earum.
+								button Read More
+
+						.col-xl-4.col-md-6
+							.our-card
+								i(class="fas fa-info").services-icon
+								p.h3 Support
+								p At vero eos et accusamus et iusto odio dignissimos ducimus blatiis placeatuos.inima id, earum. Rerum nobis asperiores  natus disti Minima id, earum.
+								button Read More
+
+						.col-xl-4.col-md-6
+							.our-card
+								i(class="fas fa-book").services-icon
+								p.h3 Documentation
+								p At vero eos et accusamus et iusto odio dignissimos ducimus blatiis placeatuos.inima id, earum. Rerum nobis asperiores  natus disti Minima id, earum.
+								button Read More
+
+						.col-xl-4.col-md-6
+							.our-card
+								i(class="fas fa-code").services-icon
+								p.h3 Develepment
+								p At vero eos et accusamus et iusto odio dignissimos ducimus blatiis placeatuos.inima id, earum. Rerum nobis asperiores  natus disti Minima id, earum.
+								button Read More
+
+						.col-xl-4.col-md-6
+							.our-card
+								i(class="fas fa-pencil-alt").services-icon
+								p.h3 Design
+								p At vero eos et accusamus et iusto odio dignissimos ducimus blatiis placeatuos.inima id, earum. Rerum nobis asperiores  natus disti Minima id, earum.
+								button Read More
+
+										//- Portfolio
+		section.portfolio#portfolio
+			.container
+				.row.justify-content-center
+					.col-xl-7
+						p.display-4 Latest Work
+						p.portfolio-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						button.button.button_full(filter="all" val="on") ALL
+						button.button.button_empty.button-portfolio(filter="wd" val="off") WEB DESIGN
+						button.button.button_empty.button-portfolio(filter="ud" val="off") UI/UX DESIGN
+						button.button.button_empty.button-portfolio(filter="moc" val="off") MOCKUPS
+				.row.filter
+					.col-xl-4.col-md-12(filter="wd")
+						img(src="../img/item1.png", alt="")
+						.text
+							p.h5 Hand Watch
+							p Web Design
+					.col-xl-4.col-md-12(filter="wd")
+						img(src="../img/item2.png", alt="")
+						.text
+							p.h5 One Day Pass
+							p Web design
+					.col-xl-4.col-md-12(filter="ud")
+						img(src="../img/item3.png", alt="")
+						.text
+							p.h5 Modal T-Shirt
+							p Ui/Ux Design
+					.col-xl-4.col-md-12(filter="ud")
+						img(src="../img/item4.png", alt="")
+						.text
+							p.h5 Flask
+							p Ui/Ux Design
+					.col-xl-4.col-md-12(filter="moc")
+						img(src="../img/item5.png", alt="")
+						.text
+							p.h5 Eplemost
+							p Mockups
+					.col-xl-4.col-md-12(filter="moc")
+						img(src="../img/item6.png", alt="")
+						.text
+							p.h5 The Kitchenes
+							p Mockups
+			.row
+				.col-xl-12
+					button.button.button_full(filter="all" val="on") VIEW ALL
+	
+									//- Pricing Plan
+
+		section.pricing
+			.container
+				.row.justify-content-center
+					.col-xl-7
+						p.display-4 Pricing Plan
+						p.pricing-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+				.row.justify-content-around
+					.col-xl-4.col-md-5.col-sm-6
+						div.price
+							div.price-head
+								p Easy
+								br
+								p 
+									sup $
+									span 20 
+									sub per month
+							div.price-body
+								ul
+									li 30 Free Trail
+									li 5 Free Projects
+									li PHP 5 Enabled
+									li 24/7 Suports
+							div.price-footer
+								button.button.button-price Order Now
+					.col-xl-4.col-md-5.col-sm-6
+						div.price.price-down
+							div.price-head
+								p Basic
+								br
+								p 
+									sup $
+									span 50 
+									sub per month
+							div.price-body
+								ul
+									li 30 Free Trail
+									li 5 Free Projects
+									li PHP 5 Enabled
+									li 24/7 Suports
+							div.price-footer
+								button.button.button-price Order Now
+					.col-xl-4.col-md-5.col-sm-6
+						div.price
+							div.price-head
+								p Ultimates
+								br
+								p 
+									sup $
+									span 99 
+									sub per month
+							div.price-body
+								ul
+									li 30 Free Trail
+									li 5 Free Projects
+									li PHP 5 Enabled
+									li 24/7 Suports
+							div.price-footer
+								button.button.button-price Order Now
+
+										//- Our Team
+
+		section.team
+			.container-fluid
+				.row.justify-content-center
+					.col-xl-7
+						p.display-4 Our Team Member
+						p.team-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				.row.multiple-items
+
+					.col-xl-4.col-md-12
+						img(src="../img/team1.png", alt="")
+						p.h4 John Doe
+						p General Manager
+							.icons
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team2.png", alt="")
+						p.h4 Alexa Biru
+						p Office Derector
+							.icons
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team3.png", alt="")
+						p.h4 Ronobir sing
+						p Admin
+							.icons
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+								a(href="")
+									span(class="fa-stack fa-2x")
+										i(class="fas fa-square fa-stack-2x")
+										i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team1.png", alt="")
+						p.h4 John Doe
+						p General Manager
+						.icons
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team2.png", alt="")
+						p.h4 Alexa Biru
+						p Office Derector
+						.icons
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team3.png", alt="")
+						p.h4 Ronobir sing
+						p Admin
+						.icons
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team1.png", alt="")
+						p.h4 John Doe
+						p General Manager
+						.icons
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team2.png", alt="")
+						p.h4 Alexa Biru
+						p Office Derector
+						.icons
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+					.col-xl-4.col-md-12
+						img(src="../img/team3.png", alt="")
+						p.h4 Ronobir sing
+						p Admin
+						.icons
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-vk fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-facebook fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-twitter fa-stack-1x fa-inverse")
+
+							a(href="")
+								span(class="fa-stack fa-2x")
+									i(class="fas fa-square fa-stack-2x")
+									i(class="fab fa-instagram fa-stack-1x fa-inverse")
+
+
+												//- Blog
+		section.services#blog
+			.container
+				.row.justify-content-center
+					.col-xl-5.col-md-7
+						p.display-4 Blog
+						p.team-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				.row.left
+					.col-xl-6.col-md-6
+						img(src="../img/blog1.png", alt="" class="img-fluid")
+					.col-xl-6.col-md-5
+						.blog
+							a SEO Quis VestibulH
+							div
+								span 
+									i(class="far fa-calendar-alt") 
+									span 12.10.05 
+								span 
+									i(class="far fa-file") 
+									span Development
+									
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem atque aut assumenda nobis recusandae, maiores numquam voluptates, repellat, excepturi velit eius dolor dicta porro autem quia, necessitatibus unde ullam! Quia consequuntur ex unde sunt?
+
+				.row.right
+					.col-xl-6.col-md-6
+						img(src="../img/blog1.png", alt="" class="img-fluid")
+					.col-xl-6.col-md-5
+						.blog
+							a SEO Quis Vestibulum
+							div
+								span 
+									i(class="far fa-calendar-alt") 
+									span 12.10.05 	
+								span 
+									i(class="far fa-file") 
+									span Development
+
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem atque aut assumenda nobis recusandae, maiores numquam voluptates, repellat, excepturi velit eius dolor dicta porro autem quia, necessitatibus unde ullam! Quia consequuntur ex unde sunt?
+
+				.row.left
+					.col-xl-6.col-md-6
+						img(src="../img/blog1.png", alt="" class="img-fluid")
+					.col-xl-6.col-md-5
+						.blog
+							a.h3 SEO Quis Vestibulum
+							div
+								span 
+									i(class="far fa-calendar-alt") 
+									span 12.10.05 
+								span 
+									i(class="far fa-file") 
+									span Development
+
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem atque aut assumenda nobis recusandae, maiores numquam voluptates, repellat, excepturi velit eius dolor dicta porro autem quia, necessitatibus unde ullam! Quia consequuntur ex unde sunt?
+				.row.blog-button
+					.col-xl-12
+						button.button.button-price More view
+
+										//- Footer
+		footer.footer#ContactUs
+			.container
+				.row.justify-content-center
+					.col-xl-7
+						p.display-4 Contact Us
+						p.team-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				.row.justify-content-around
+					.col-xl-3.col-md-6.col-sm-6
+						.circle
+							i(class="fas fa-map-marker-alt footer-ico")
+						p Nobinagar savar,  Dhaka 
+							br 
+							span Bangladesh
+					.col-xl-3.col-md-6.col-sm-6
+						.circle
+							i(class="fas fa-phone fa-rotate-90 footer-ico")
+						p +8801743331996
+							br 
+							span +8801928737807
+					.col-xl-3.col-md-6.col-sm-6
+						.circle
+							i(class="fas fa-envelope footer-ico")
+						p quickmasud@gmail.com
+							br 
+							span quickmasud@yahoo.com
+
+				.row.justify-content-center.form
+
+					.col-xl-5
+						input(type="text" placeholder="Your Name" id="input-filter")
+
+					.col-xl-5
+						input(type="email" placeholder="Your Email")
+
+					.col-xl-10
+						textarea(name="", cols="50", rows="10" placeholder="Write Message")
+
+					.col-xl-2.offset-xl-8
+						//- .offset-xl-8 - сколько колонок отступов от кнопки
+						button SEND
+		footer All rights Reserved © 2020
+
+
+		
+
+											
+				
+
+		
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		script(src="js/jquery-3.5.1.min.js" stop="off")
+		script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
+		script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+		script(src="js/main.js")
+		
+	
+	
